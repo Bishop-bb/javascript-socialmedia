@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <center>
+    <h1>Reach us on social media via the following links</h1>
+    
+    <div id="mm">
+        <a id="face" href= "https://www.facebook.com/iyiolaolalekan.blessing.9" ><i class="fa-brands fa-instagram"></i></a>
+    <a id="insta" href= "https://www.instagram.com/blessing_iyiola"><i class="fa-brands fa-facebook fb"></i></a>
+    </div>
+</center>
+
+
+
+
+
+
+    <script>
+        function rand(){
+            // let output = document.getElementById('here').innerHTML
+            let rand = Math.floor(Math.random() * 11 );
+
+            
+            let face = "Facebook" 
+            let insta = "Instagram"
+            
+
+            if (rand <= 5){
+                output1 = face
+                output2 = ""
+                
+            }
+            else{
+                output2 = insta
+                output1 = ""
+
+                
+            }
+
+            document.getElementById('face').innerHTML = output1
+            document.getElementById('insta').innerHTML = output2
+
+            console.log(rand)
+
+        }
+        rand()
+    </script>
+</body>
+</html>
